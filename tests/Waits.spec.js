@@ -10,5 +10,9 @@ test("ClientApp", async ({ page }) => {
   //await page.waitForLoadState("networkidle");
   //waitFor() only works for single element
   await productTitles.first().waitFor();
-  console.log(await productTitles.allTextContents());
+  console.log(await productTitles.allTextContents());\
+  console.log("Test completed");
+    console.log("Test completed");
+
 });
+
