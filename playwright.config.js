@@ -6,7 +6,7 @@ const config = {
   testDir: "./tests",
   timeout: 40 * 1000, //OVERRIDE DEFAULT TIMEOUT IN ENTIRE PROJECT
   expect: {
-    timeout: 40 * 1000, //TIMEOUT FOR ASSERTIONS
+    timeout: 5000, //TIMEOUT FOR ASSERTIONS
   },
   reporter: "html",
   use: {
