@@ -5,7 +5,7 @@ test('Traversing the elements', async ({ page }) => {
     //For resable code we can create a helper function and call it here
     //I made a helper function in helpers.js and called it here for login
  await performLogin(page);
-//123
+//1234567
  //To get single element
  console.log(await page.locator(".card-body a").first().textContent()); 
  console.log(await page.locator(".card-body a").nth(0).textContent()); 
