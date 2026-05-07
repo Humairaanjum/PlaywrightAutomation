@@ -10,8 +10,8 @@ test('Traversing the elements', async ({ page }) => {
  console.log(await page.locator(".card-body a").first().textContent()); 
  console.log(await page.locator(".card-body a").nth(0).textContent()); 
 
- //To get all or multiple elements
-
+ //To get all or multiple elementssss
+console.log("test");
 
   
   
