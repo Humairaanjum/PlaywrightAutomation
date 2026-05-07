@@ -1,7 +1,7 @@
 // Shared helper functions for all tests
 
 async function performLogin(page) {
-  await page.goto("https://rahulshettyacademy.com/loginpagePractise/");        
+  await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
   const userName = page.locator("#username");
   const signIn = page.locator("#signInBtn");
   await userName.fill("rahulshettyacademy");
@@ -9,4 +9,14 @@ async function performLogin(page) {
   await signIn.click();
 }
 
-module.exports = { performLogin };
+async function Login(page){
+  await page.goto("https://rahulshettyacademy.com/client/#/auth/login");
+  const userName=page.locator("#userEmail");
+    const password=page.locator("[type='password']");
+    const signIn=page.locator(".login-btn");
+    await userName.fill("anshika@gmail.com");
+    await password.fill("Iamking@000");
+    await signIn.click();
+}
+
+module.exports = { performLogin, Login };
