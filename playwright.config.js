@@ -4,7 +4,7 @@ import { defineConfig, devices } from "@playwright/test";
  */
 const config = {
   testDir: "./tests",
-  timeout: 40 * 1000, //OVERRIDE DEFAULT TIMEOUT IN ENTIRE PROJECT
+  timeout: 5000, //OVERRIDE DEFAULT TIMEOUT IN ENTIRE PROJECT
   expect: {
     timeout: 5000, //TIMEOUT FOR ASSERTIONS
   },
