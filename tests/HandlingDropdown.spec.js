@@ -22,23 +22,15 @@ test("Handling Dropdowns", async ({ page }) => {
   await dropdown.selectOption("consult");
 
   // ─── Radio Button ──────────────────────────────────────────────────────────
-  // Click the last radio button on the page (identified by the ".checkmark" class)
   await page.locator(".checkmark").last().click();
-
-  // Clicking the radio button triggers a modal popup — dismiss it by clicking "Okay"
-  // Without this, the modal backdrop blocks all further interactions on the page
   await page.locator("#okayBtn").click();
-
   // Assert that the last radio button is now in a checked state
   await expect(page.locator(".checkmark").last()).toBeChecked();
 
   // ─── Checkbox ──────────────────────────────────────────────────────────────
-  // Click the "terms" checkbox to check it
   await page.locator("#terms").click();
-
   // Assert that the checkbox is now checked
   await expect(page.locator("#terms")).toBeChecked();
-
   // Uncheck the checkbox using the dedicated .uncheck() method
   // Safer than .click() — won't accidentally check an already-unchecked box
   await page.locator("#terms").uncheck();
