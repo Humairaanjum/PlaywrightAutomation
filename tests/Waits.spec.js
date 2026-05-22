@@ -1,5 +1,5 @@
 const { test, expect } = require("@playwright/test");
-const { Login } = require("./helpers");
+const { Login } = require("../helpers");
 
 test("ClientApp", async ({ page }) => {
   await Login(page);

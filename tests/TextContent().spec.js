@@ -1,5 +1,5 @@
 const { test, expect } = require("@playwright/test");
-const { performLogin } = require("./helpers");
+const { performLogin } = require("../helpers");
 
 test("Traversing the elements", async ({ page }) => {
   //For resable code we can create a helper function and call it here

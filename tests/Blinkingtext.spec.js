@@ -12,6 +12,4 @@ test('Handling Blinking Text',async({page})=>{
   const docLink=page.locator("[href*='request']");
   await expect(docLink).toHaveAttribute("class","blinkingText");
 
-
-
 });
