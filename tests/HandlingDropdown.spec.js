@@ -1,5 +1,5 @@
 const { test, expect } = require(`@playwright/test`);
-const { performLogin } = require(`./helpers`);
+const { performLogin } = require(`../helpers`);
 
 test("Handling Dropdowns", async ({ page }) => {
   // Navigate to the login practice page
